@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{43942302-6950-4BF0-935E-55E7C69E4844}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>KR</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>Main</EntryPointSymbol>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="DLLKR">
+      <HintPath>..\..\DLLKR\x64\Debug\DLLKR.dll</HintPath>
+    </Reference>
+    <Reference Include="DLLlibrary">
+      <HintPath>..\..\DLLlibrary\x64\Debug\DLLlibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="Theory.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Theory.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Theory.resx">
+      <DependentUpon>Theory.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-11.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-12.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-13.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-14.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-15.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-16.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-18.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-19.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-20.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-21.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-22.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-23.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-24.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-25.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-26.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-27.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-28.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-29.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-30.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-31.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-32.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-33.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-34.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-35.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-36.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-37.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-38.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-39.jpg" />
+    <Image Include="C:\Users\gosha\OneDrive\Изображения\Новая папка (2)\f6cf79a400b741eb5d97b8b099482ed5-40.jpg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
